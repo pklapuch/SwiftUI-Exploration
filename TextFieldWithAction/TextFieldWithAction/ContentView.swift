@@ -6,7 +6,7 @@ struct ContentView: View {
     var body: some View {
         VStack(alignment: .leading) {
             TextField(
-                "Enter your name",
+                "Text",
                 text: Binding(
                     get: { viewModel.text },
                     set: { viewModel.perform(action: .editedText($0)) }
