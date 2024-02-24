@@ -1,10 +1,19 @@
 import SwiftUI
 
 /// Router is responsible for `Navigation and Presentation` of views
-open class RouterViewModel: ObservableObject {
-    @Published private(set) var state: State = .inital
+final class RouterViewModel: ObservableObject {
 
-    init() {}
+    /// State can be updated in two ways:
+    /// - By `ViewModel action`: i.e. viewModel calls `push(route)`
+    /// - By `SwiftUI binding`: ..e user swipes modal away or taps on `back buton`
+    struct State {
+        var navigationPath: [Route] = []
+        var presentingSheet: Route? = nil
+        var presentingFullScreen: Route? = nil
+        var presentingModal: Route? = nil
+    }
+
+    @Published private(set) var state: State = .inital
 
     // MARK: - Navigation
 
@@ -52,17 +61,6 @@ open class RouterViewModel: ObservableObject {
 
     func dismissModal() {
         state.presentingModal = nil
-    }
-}
-
-// MARK: - Router State
-
-extension RouterViewModel {
-    struct State {
-        var navigationPath: [Route] = []
-        var presentingSheet: Route? = nil
-        var presentingFullScreen: Route? = nil
-        var presentingModal: Route? = nil
     }
 }
 

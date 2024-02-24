@@ -13,7 +13,7 @@ struct RouterNavigationApp: App {
     var body: some Scene {
         WindowGroup {
             RouterView(
-                router: router,
+                viewModel: router,
                 rootContent: { makeInitialView() },
                 contentFactory: viewFactory
             )
