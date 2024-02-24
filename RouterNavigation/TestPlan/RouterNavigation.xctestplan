@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "B71C9D6A-65D2-490E-8731-A37BA550506C",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:RouterNavigation.xcodeproj",
+      "identifier" : "35A6C5D52B8A3B0100815958",
+      "name" : "RouterNavigation"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:RouterNavigation.xcodeproj",
+        "identifier" : "35A6C5E52B8A3B0600815958",
+        "name" : "RouterNavigationTests"
+      }
+    }
+  ],
+  "version" : 1
+}
