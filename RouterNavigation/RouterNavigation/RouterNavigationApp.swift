@@ -3,11 +3,11 @@ import SwiftUI
 @main
 struct RouterNavigationApp: App {
     private let router: RouterViewModel
-    private let viewFactory: DefaultViewFactory
+    private let viewFactory: ViewFactory
 
     init() {
-        router = RouterViewModel()
-        viewFactory = DefaultViewFactory(router: router)
+        router = container.router
+        viewFactory = container.viewFactory
     }
 
     var body: some Scene {
@@ -23,11 +23,11 @@ struct RouterNavigationApp: App {
     @ViewBuilder private func makeInitialView() -> some View {
         switch (container.isLoggedIn, container.hasCompletedOnboarding) {
         case (false, false):
-            viewFactory.makeWelcomeView()
+            viewFactory.make(route: .welcome, mode: .navigation)
         case (false, _):
-            viewFactory.makeLoginView()
+            viewFactory.make(route: .login, mode: .navigation)
         default:
-            viewFactory.makeDashboardView()
+            viewFactory.make(route: .dashboard, mode: .navigation)
         }
     }
 }

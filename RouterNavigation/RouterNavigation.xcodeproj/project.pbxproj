@@ -10,9 +10,7 @@
 		35A6C5DA2B8A3B0100815958 /* RouterNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5D92B8A3B0100815958 /* RouterNavigationApp.swift */; };
 		35A6C5DE2B8A3B0500815958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C5DD2B8A3B0500815958 /* Assets.xcassets */; };
 		35A6C5E12B8A3B0500815958 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C5E02B8A3B0500815958 /* Preview Assets.xcassets */; };
-		35A6C5EB2B8A3B0600815958 /* RouterNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5EA2B8A3B0600815958 /* RouterNavigationTests.swift */; };
-		35A6C5F52B8A3B0600815958 /* RouterNavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5F42B8A3B0600815958 /* RouterNavigationUITests.swift */; };
-		35A6C5F72B8A3B0600815958 /* RouterNavigationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5F62B8A3B0600815958 /* RouterNavigationUITestsLaunchTests.swift */; };
+		35A6C5EB2B8A3B0600815958 /* SnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5EA2B8A3B0600815958 /* SnapshotTests.swift */; };
 		35A6C6072B8A3F6A00815958 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6062B8A3F6A00815958 /* RouterViewModel.swift */; };
 		35A6C6092B8A3FC100815958 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6082B8A3FC100815958 /* Route.swift */; };
 		35A6C60B2B8A407400815958 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C60A2B8A407400815958 /* PresentationMode.swift */; };
@@ -33,17 +31,11 @@
 		35A6C6302B8A7CAD00815958 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C62F2B8A7CAD00815958 /* ViewFactory.swift */; };
 		35A6C6322B8A7CC500815958 /* DefaultViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6312B8A7CC500815958 /* DefaultViewFactory.swift */; };
 		35A6C6342B8A7D7300815958 /* FakeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6332B8A7D7300815958 /* FakeContainer.swift */; };
+		35A6C6372B8A8BD600815958 /* SnaphostHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6362B8A8BD600815958 /* SnaphostHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		35A6C5E72B8A3B0600815958 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 35A6C5CE2B8A3B0100815958 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 35A6C5D52B8A3B0100815958;
-			remoteInfo = RouterNavigation;
-		};
-		35A6C5F12B8A3B0600815958 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35A6C5CE2B8A3B0100815958 /* Project object */;
 			proxyType = 1;
@@ -58,10 +50,7 @@
 		35A6C5DD2B8A3B0500815958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A6C5E02B8A3B0500815958 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		35A6C5E62B8A3B0600815958 /* RouterNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouterNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		35A6C5EA2B8A3B0600815958 /* RouterNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationTests.swift; sourceTree = "<group>"; };
-		35A6C5F02B8A3B0600815958 /* RouterNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouterNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		35A6C5F42B8A3B0600815958 /* RouterNavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationUITests.swift; sourceTree = "<group>"; };
-		35A6C5F62B8A3B0600815958 /* RouterNavigationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35A6C5EA2B8A3B0600815958 /* SnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotTests.swift; sourceTree = "<group>"; };
 		35A6C6062B8A3F6A00815958 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		35A6C6082B8A3FC100815958 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		35A6C60A2B8A407400815958 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
@@ -82,6 +71,8 @@
 		35A6C62F2B8A7CAD00815958 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		35A6C6312B8A7CC500815958 /* DefaultViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewFactory.swift; sourceTree = "<group>"; };
 		35A6C6332B8A7D7300815958 /* FakeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeContainer.swift; sourceTree = "<group>"; };
+		35A6C6352B8A8B5B00815958 /* RouterNavigation.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = RouterNavigation.xctestplan; path = TestPlan/RouterNavigation.xctestplan; sourceTree = "<group>"; };
+		35A6C6362B8A8BD600815958 /* SnaphostHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnaphostHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,19 +90,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		35A6C5ED2B8A3B0600815958 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		35A6C5CD2B8A3B0100815958 = {
 			isa = PBXGroup;
 			children = (
+				35A6C6352B8A8B5B00815958 /* RouterNavigation.xctestplan */,
 				35A6C5D82B8A3B0100815958 /* RouterNavigation */,
 				35A6C5E92B8A3B0600815958 /* RouterNavigationTests */,
 				35A6C5D72B8A3B0100815958 /* Products */,
@@ -123,7 +108,6 @@
 			children = (
 				35A6C5D62B8A3B0100815958 /* RouterNavigation.app */,
 				35A6C5E62B8A3B0600815958 /* RouterNavigationTests.xctest */,
-				35A6C5F02B8A3B0600815958 /* RouterNavigationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,19 +138,10 @@
 		35A6C5E92B8A3B0600815958 /* RouterNavigationTests */ = {
 			isa = PBXGroup;
 			children = (
-				35A6C5F32B8A3B0600815958 /* RouterNavigationUITests */,
-				35A6C5EA2B8A3B0600815958 /* RouterNavigationTests.swift */,
+				35A6C5EA2B8A3B0600815958 /* SnapshotTests.swift */,
+				35A6C6362B8A8BD600815958 /* SnaphostHelper.swift */,
 			);
 			path = RouterNavigationTests;
-			sourceTree = "<group>";
-		};
-		35A6C5F32B8A3B0600815958 /* RouterNavigationUITests */ = {
-			isa = PBXGroup;
-			children = (
-				35A6C5F42B8A3B0600815958 /* RouterNavigationUITests.swift */,
-				35A6C5F62B8A3B0600815958 /* RouterNavigationUITestsLaunchTests.swift */,
-			);
-			path = RouterNavigationUITests;
 			sourceTree = "<group>";
 		};
 		35A6C6032B8A3B2F00815958 /* Router */ = {
@@ -262,24 +237,6 @@
 			productReference = 35A6C5E62B8A3B0600815958 /* RouterNavigationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		35A6C5EF2B8A3B0600815958 /* RouterNavigationUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 35A6C6002B8A3B0600815958 /* Build configuration list for PBXNativeTarget "RouterNavigationUITests" */;
-			buildPhases = (
-				35A6C5EC2B8A3B0600815958 /* Sources */,
-				35A6C5ED2B8A3B0600815958 /* Frameworks */,
-				35A6C5EE2B8A3B0600815958 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				35A6C5F22B8A3B0600815958 /* PBXTargetDependency */,
-			);
-			name = RouterNavigationUITests;
-			productName = RouterNavigationUITests;
-			productReference = 35A6C5F02B8A3B0600815958 /* RouterNavigationUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -294,10 +251,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					35A6C5E52B8A3B0600815958 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = 35A6C5D52B8A3B0100815958;
-					};
-					35A6C5EF2B8A3B0600815958 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 35A6C5D52B8A3B0100815958;
 					};
@@ -318,7 +271,6 @@
 			targets = (
 				35A6C5D52B8A3B0100815958 /* RouterNavigation */,
 				35A6C5E52B8A3B0600815958 /* RouterNavigationTests */,
-				35A6C5EF2B8A3B0600815958 /* RouterNavigationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -334,13 +286,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		35A6C5E42B8A3B0600815958 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35A6C5EE2B8A3B0600815958 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -382,16 +327,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A6C5EB2B8A3B0600815958 /* RouterNavigationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		35A6C5EC2B8A3B0600815958 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35A6C5F52B8A3B0600815958 /* RouterNavigationUITests.swift in Sources */,
-				35A6C5F72B8A3B0600815958 /* RouterNavigationUITestsLaunchTests.swift in Sources */,
+				35A6C5EB2B8A3B0600815958 /* SnapshotTests.swift in Sources */,
+				35A6C6372B8A8BD600815958 /* SnaphostHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,11 +339,6 @@
 			isa = PBXTargetDependency;
 			target = 35A6C5D52B8A3B0100815958 /* RouterNavigation */;
 			targetProxy = 35A6C5E72B8A3B0600815958 /* PBXContainerItemProxy */;
-		};
-		35A6C5F22B8A3B0600815958 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 35A6C5D52B8A3B0100815958 /* RouterNavigation */;
-			targetProxy = 35A6C5F12B8A3B0600815958 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -628,42 +560,6 @@
 			};
 			name = Release;
 		};
-		35A6C6012B8A3B0600815958 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y545S76C5X;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawelklapuch.RouterNavigationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RouterNavigation;
-			};
-			name = Debug;
-		};
-		35A6C6022B8A3B0600815958 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = Y545S76C5X;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pawelklapuch.RouterNavigationUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RouterNavigation;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -690,15 +586,6 @@
 			buildConfigurations = (
 				35A6C5FE2B8A3B0600815958 /* Debug */,
 				35A6C5FF2B8A3B0600815958 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		35A6C6002B8A3B0600815958 /* Build configuration list for PBXNativeTarget "RouterNavigationUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				35A6C6012B8A3B0600815958 /* Debug */,
-				35A6C6022B8A3B0600815958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
