@@ -16,6 +16,7 @@ struct RouterNavigationApp: App {
         }
     }
 
+    /// `not private` so it can be accessed from test target (snapshot tests)
     var contentView: some View {
         RouterView(
             viewModel: router,

@@ -45,13 +45,3 @@ final class RouterNavigationTests: XCTestCase {
         try snapshot(windowedView: app.contentView, name: "PrivacyPolicy_inAppState")
     }
 }
-
-private extension XCTestCase {
-    func wait(timeInterval: TimeInterval = 1.0) {
-        let exp = expectation(description: "wait")
-        DispatchQueue.main.asyncAfter(deadline: .now() + timeInterval, execute: {
-            exp.fulfill()
-        })
-        wait(for: [exp], timeout: timeInterval + 0.05)
-    }
-}
