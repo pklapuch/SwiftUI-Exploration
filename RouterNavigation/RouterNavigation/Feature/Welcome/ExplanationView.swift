@@ -1,7 +1,7 @@
 import SwiftUI
 
-final class ExplanationView: View {
-    @Published var viewModel: ExplanationViewModel
+struct ExplanationView: View {
+    @ObservedObject var viewModel: ExplanationViewModel
 
     init(viewModel: ExplanationViewModel) {
         self.viewModel = viewModel

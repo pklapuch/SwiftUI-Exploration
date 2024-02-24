@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		35A6C5DA2B8A3B0100815958 /* RouterNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5D92B8A3B0100815958 /* RouterNavigationApp.swift */; };
-		35A6C5DC2B8A3B0100815958 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5DB2B8A3B0100815958 /* ContentView.swift */; };
 		35A6C5DE2B8A3B0500815958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C5DD2B8A3B0500815958 /* Assets.xcassets */; };
 		35A6C5E12B8A3B0500815958 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C5E02B8A3B0500815958 /* Preview Assets.xcassets */; };
 		35A6C5EB2B8A3B0600815958 /* RouterNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5EA2B8A3B0600815958 /* RouterNavigationTests.swift */; };
 		35A6C5F52B8A3B0600815958 /* RouterNavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5F42B8A3B0600815958 /* RouterNavigationUITests.swift */; };
 		35A6C5F72B8A3B0600815958 /* RouterNavigationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5F62B8A3B0600815958 /* RouterNavigationUITestsLaunchTests.swift */; };
-		35A6C6072B8A3F6A00815958 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6062B8A3F6A00815958 /* Router.swift */; };
+		35A6C6072B8A3F6A00815958 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6062B8A3F6A00815958 /* RouterViewModel.swift */; };
 		35A6C6092B8A3FC100815958 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6082B8A3FC100815958 /* Route.swift */; };
 		35A6C60B2B8A407400815958 /* PresentationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C60A2B8A407400815958 /* PresentationMode.swift */; };
 		35A6C60D2B8A41CD00815958 /* RouterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C60C2B8A41CD00815958 /* RouterView.swift */; };
@@ -28,6 +27,12 @@
 		35A6C6202B8A593900815958 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C61F2B8A593900815958 /* LoginViewModel.swift */; };
 		35A6C6232B8A5AA800815958 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6222B8A5AA800815958 /* DashboardView.swift */; };
 		35A6C6252B8A5AB000815958 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6242B8A5AB000815958 /* DashboardViewModel.swift */; };
+		35A6C62A2B8A72A600815958 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6292B8A72A600815958 /* PrivacyPolicyView.swift */; };
+		35A6C62C2B8A72B100815958 /* PrivacyPolicyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C62B2B8A72B100815958 /* PrivacyPolicyViewModel.swift */; };
+		35A6C62E2B8A7B5700815958 /* RouterView+Modal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C62D2B8A7B5700815958 /* RouterView+Modal.swift */; };
+		35A6C6302B8A7CAD00815958 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C62F2B8A7CAD00815958 /* ViewFactory.swift */; };
+		35A6C6322B8A7CC500815958 /* DefaultViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6312B8A7CC500815958 /* DefaultViewFactory.swift */; };
+		35A6C6342B8A7D7300815958 /* FakeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6332B8A7D7300815958 /* FakeContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +55,6 @@
 /* Begin PBXFileReference section */
 		35A6C5D62B8A3B0100815958 /* RouterNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A6C5D92B8A3B0100815958 /* RouterNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationApp.swift; sourceTree = "<group>"; };
-		35A6C5DB2B8A3B0100815958 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35A6C5DD2B8A3B0500815958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A6C5E02B8A3B0500815958 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		35A6C5E62B8A3B0600815958 /* RouterNavigationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouterNavigationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +62,7 @@
 		35A6C5F02B8A3B0600815958 /* RouterNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RouterNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A6C5F42B8A3B0600815958 /* RouterNavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationUITests.swift; sourceTree = "<group>"; };
 		35A6C5F62B8A3B0600815958 /* RouterNavigationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		35A6C6062B8A3F6A00815958 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		35A6C6062B8A3F6A00815958 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
 		35A6C6082B8A3FC100815958 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		35A6C60A2B8A407400815958 /* PresentationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationMode.swift; sourceTree = "<group>"; };
 		35A6C60C2B8A41CD00815958 /* RouterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,12 @@
 		35A6C61F2B8A593900815958 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		35A6C6222B8A5AA800815958 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		35A6C6242B8A5AB000815958 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		35A6C6292B8A72A600815958 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		35A6C62B2B8A72B100815958 /* PrivacyPolicyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewModel.swift; sourceTree = "<group>"; };
+		35A6C62D2B8A7B5700815958 /* RouterView+Modal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RouterView+Modal.swift"; sourceTree = "<group>"; };
+		35A6C62F2B8A7CAD00815958 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		35A6C6312B8A7CC500815958 /* DefaultViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewFactory.swift; sourceTree = "<group>"; };
+		35A6C6332B8A7D7300815958 /* FakeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +133,10 @@
 			children = (
 				35A6C60E2B8A42D700815958 /* Feature */,
 				35A6C6032B8A3B2F00815958 /* Router */,
+				35A6C62F2B8A7CAD00815958 /* ViewFactory.swift */,
+				35A6C6312B8A7CC500815958 /* DefaultViewFactory.swift */,
 				35A6C5D92B8A3B0100815958 /* RouterNavigationApp.swift */,
-				35A6C5DB2B8A3B0100815958 /* ContentView.swift */,
+				35A6C6332B8A7D7300815958 /* FakeContainer.swift */,
 				35A6C5DD2B8A3B0500815958 /* Assets.xcassets */,
 				35A6C5DF2B8A3B0500815958 /* Preview Content */,
 			);
@@ -160,10 +172,11 @@
 		35A6C6032B8A3B2F00815958 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				35A6C6062B8A3F6A00815958 /* Router.swift */,
+				35A6C6062B8A3F6A00815958 /* RouterViewModel.swift */,
 				35A6C6082B8A3FC100815958 /* Route.swift */,
 				35A6C60A2B8A407400815958 /* PresentationMode.swift */,
 				35A6C60C2B8A41CD00815958 /* RouterView.swift */,
+				35A6C62D2B8A7B5700815958 /* RouterView+Modal.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -205,6 +218,8 @@
 			children = (
 				35A6C6222B8A5AA800815958 /* DashboardView.swift */,
 				35A6C6242B8A5AB000815958 /* DashboardViewModel.swift */,
+				35A6C6292B8A72A600815958 /* PrivacyPolicyView.swift */,
+				35A6C62B2B8A72B100815958 /* PrivacyPolicyViewModel.swift */,
 			);
 			path = Dashbaord;
 			sourceTree = "<group>";
@@ -339,22 +354,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35A6C6072B8A3F6A00815958 /* Router.swift in Sources */,
+				35A6C62A2B8A72A600815958 /* PrivacyPolicyView.swift in Sources */,
+				35A6C6072B8A3F6A00815958 /* RouterViewModel.swift in Sources */,
 				35A6C6112B8A42EC00815958 /* WelcomeView.swift in Sources */,
-				35A6C5DC2B8A3B0100815958 /* ContentView.swift in Sources */,
 				35A6C6152B8A512500815958 /* ExplanationViewModel.swift in Sources */,
 				35A6C60D2B8A41CD00815958 /* RouterView.swift in Sources */,
+				35A6C6322B8A7CC500815958 /* DefaultViewFactory.swift in Sources */,
 				35A6C6192B8A530800815958 /* ResultView.swift in Sources */,
+				35A6C6342B8A7D7300815958 /* FakeContainer.swift in Sources */,
 				35A6C60B2B8A407400815958 /* PresentationMode.swift in Sources */,
 				35A6C6252B8A5AB000815958 /* DashboardViewModel.swift in Sources */,
 				35A6C6232B8A5AA800815958 /* DashboardView.swift in Sources */,
+				35A6C62E2B8A7B5700815958 /* RouterView+Modal.swift in Sources */,
 				35A6C61E2B8A593300815958 /* LoginView.swift in Sources */,
 				35A6C6092B8A3FC100815958 /* Route.swift in Sources */,
 				35A6C6202B8A593900815958 /* LoginViewModel.swift in Sources */,
 				35A6C6172B8A512E00815958 /* ExplanationView.swift in Sources */,
 				35A6C6132B8A4E4300815958 /* WelcomeViewModel.swift in Sources */,
+				35A6C6302B8A7CAD00815958 /* ViewFactory.swift in Sources */,
 				35A6C5DA2B8A3B0100815958 /* RouterNavigationApp.swift in Sources */,
 				35A6C61B2B8A531100815958 /* ResultViewModel.swift in Sources */,
+				35A6C62C2B8A72B100815958 /* PrivacyPolicyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

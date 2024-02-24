@@ -1,7 +1,7 @@
 import SwiftUI
 
-final class ResultView: View {
-    @Published var viewModel: ResultViewModel
+struct ResultView: View {
+    @ObservedObject var viewModel: ResultViewModel
 
     init(viewModel: ResultViewModel) {
         self.viewModel = viewModel

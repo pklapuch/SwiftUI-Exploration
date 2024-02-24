@@ -6,6 +6,7 @@ enum Route: Equatable, Hashable {
     case reuslt
     case login
     case dashboard
+    case privacyPolicy
 }
 
 extension Route: Identifiable {

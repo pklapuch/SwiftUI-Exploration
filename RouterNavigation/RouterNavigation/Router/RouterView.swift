@@ -1,30 +1,35 @@
 import SwiftUI
 
 struct RouterView<Content: View>: View {
-    @ObservedObject var router: Router
-    private let content: Content
+    @ObservedObject var router: RouterViewModel
+    private let rootContent: () -> Content
+    private let contentFactory: ViewFactory
 
-    init(router: Router, @ViewBuilder content: @escaping () -> Content) {
+    init(
+        router: RouterViewModel,
+        rootContent: @escaping () -> Content,
+        contentFactory: ViewFactory
+    ) {
         self.router = router
-        self.content = content()
+        self.rootContent = rootContent
+        self.contentFactory = contentFactory
     }
 
     var body: some View {
         NavigationStack(path: router.navigationPath) {
-            content
+            rootContent()
                 .navigationDestination(for: Route.self) { route in
-                    router.view(for: route, mode: .navigation)
+                    contentFactory.make(route: route, mode: .navigation)
                 }
+        }
+        .sheet(item: router.presentingSheet) { route in
+            contentFactory.make(route: route, mode: .sheet)
+        }
+        .fullScreenCover(item: router.presentingFullScreen) { route in
+            contentFactory.make(route: route, mode: .fullscreen)
+        }
+        .modal(item: router.presentingModal) { route in
+            contentFactory.make(route: route, mode: .modal)
         }
     }
 }
-
-/*
- .sheet(item: router.presentingSheet) { spec in
-     router.view(spec: spec, route: .sheet)
- }.fullScreenCover(item: router.presentingFullScreen) { spec in
-     router.view(spec: spec, route: .fullScreenCover)
- }.modal(item: router.presentingModal) { spec in
-     router.view(spec: spec, route: .modal)
- }
- */
