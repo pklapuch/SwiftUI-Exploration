@@ -12,12 +12,16 @@ struct RouterNavigationApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RouterView(
-                viewModel: router,
-                rootContent: { makeInitialView() },
-                contentFactory: viewFactory
-            )
+            contentView
         }
+    }
+
+    var contentView: some View {
+        RouterView(
+            viewModel: router,
+            rootContent: { makeInitialView() },
+            contentFactory: viewFactory
+        )
     }
 
     @ViewBuilder private func makeInitialView() -> some View {

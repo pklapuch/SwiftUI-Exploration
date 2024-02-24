@@ -13,7 +13,11 @@ final class RouterViewModel: ObservableObject {
         var presentingModal: Route? = nil
     }
 
-    @Published private(set) var state: State = .inital
+    @Published private(set) var state: State
+
+    init(state: RouterViewModel.State = .inital) {
+        self.state = state
+    }
 
     // MARK: - Navigation
 
