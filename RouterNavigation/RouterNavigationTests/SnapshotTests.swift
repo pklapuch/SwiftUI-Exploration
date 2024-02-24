@@ -42,8 +42,6 @@ final class RouterNavigationTests: XCTestCase {
         UIView.setAnimationsEnabled(false)
 
         let app = RouterNavigationApp()
-
-        wait(timeInterval: 1)
         try snapshot(windowedView: app.contentView, name: "PrivacyPolicy_inAppState")
     }
 }
