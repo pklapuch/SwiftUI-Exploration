@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3522DFDC2B93919B000E19C9 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 3522DFDB2B93919B000E19C9 /* SnapshotTesting */; };
+		3522DFEC2B939E54000E19C9 /* __Snapshots__ in Resources */ = {isa = PBXBuildFile; fileRef = 3522DFEB2B939E54000E19C9 /* __Snapshots__ */; };
+		3522DFF12B939F73000E19C9 /* UIApplication+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522DFF02B939F72000E19C9 /* UIApplication+Window.swift */; };
+		3522DFF32B939F8A000E19C9 /* SnapshotTesting+Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522DFF22B939F8A000E19C9 /* SnapshotTesting+Window.swift */; };
+		3522DFF52B939FAA000E19C9 /* UIHostingController+Wrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522DFF42B939FAA000E19C9 /* UIHostingController+Wrap.swift */; };
+		3522DFF72B939FC5000E19C9 /* XCTestCase+Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3522DFF62B939FC5000E19C9 /* XCTestCase+Wait.swift */; };
+		359475232B938C0800D1FEB0 /* RouterViewModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359475222B938C0800D1FEB0 /* RouterViewModelState.swift */; };
 		35A6C5DA2B8A3B0100815958 /* RouterNavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C5D92B8A3B0100815958 /* RouterNavigationApp.swift */; };
 		35A6C5DE2B8A3B0500815958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C5DD2B8A3B0500815958 /* Assets.xcassets */; };
 		35A6C5E12B8A3B0500815958 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A6C5E02B8A3B0500815958 /* Preview Assets.xcassets */; };
@@ -31,11 +38,10 @@
 		35A6C6302B8A7CAD00815958 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C62F2B8A7CAD00815958 /* ViewFactory.swift */; };
 		35A6C6322B8A7CC500815958 /* DefaultViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6312B8A7CC500815958 /* DefaultViewFactory.swift */; };
 		35A6C6342B8A7D7300815958 /* FakeContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6332B8A7D7300815958 /* FakeContainer.swift */; };
-		35A6C6372B8A8BD600815958 /* SnaphostHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A6C6362B8A8BD600815958 /* SnaphostHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		35A6C5E72B8A3B0600815958 /* PBXContainerItemProxy */ = {
+		3522DFD82B938FF9000E19C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 35A6C5CE2B8A3B0100815958 /* Project object */;
 			proxyType = 1;
@@ -45,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3522DFEB2B939E54000E19C9 /* __Snapshots__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = __Snapshots__; sourceTree = "<group>"; };
+		3522DFF02B939F72000E19C9 /* UIApplication+Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Window.swift"; sourceTree = "<group>"; };
+		3522DFF22B939F8A000E19C9 /* SnapshotTesting+Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SnapshotTesting+Window.swift"; sourceTree = "<group>"; };
+		3522DFF42B939FAA000E19C9 /* UIHostingController+Wrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIHostingController+Wrap.swift"; sourceTree = "<group>"; };
+		3522DFF62B939FC5000E19C9 /* XCTestCase+Wait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Wait.swift"; sourceTree = "<group>"; };
+		359475222B938C0800D1FEB0 /* RouterViewModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModelState.swift; sourceTree = "<group>"; };
 		35A6C5D62B8A3B0100815958 /* RouterNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35A6C5D92B8A3B0100815958 /* RouterNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterNavigationApp.swift; sourceTree = "<group>"; };
 		35A6C5DD2B8A3B0500815958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,7 +84,6 @@
 		35A6C6312B8A7CC500815958 /* DefaultViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultViewFactory.swift; sourceTree = "<group>"; };
 		35A6C6332B8A7D7300815958 /* FakeContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeContainer.swift; sourceTree = "<group>"; };
 		35A6C6352B8A8B5B00815958 /* RouterNavigation.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = RouterNavigation.xctestplan; path = TestPlan/RouterNavigation.xctestplan; sourceTree = "<group>"; };
-		35A6C6362B8A8BD600815958 /* SnaphostHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnaphostHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +98,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3522DFDC2B93919B000E19C9 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3522DFEF2B939F67000E19C9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3522DFF02B939F72000E19C9 /* UIApplication+Window.swift */,
+				3522DFF22B939F8A000E19C9 /* SnapshotTesting+Window.swift */,
+				3522DFF42B939FAA000E19C9 /* UIHostingController+Wrap.swift */,
+				3522DFF62B939FC5000E19C9 /* XCTestCase+Wait.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		35A6C5CD2B8A3B0100815958 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +123,7 @@
 				35A6C5D82B8A3B0100815958 /* RouterNavigation */,
 				35A6C5E92B8A3B0600815958 /* RouterNavigationTests */,
 				35A6C5D72B8A3B0100815958 /* Products */,
+				35A6C63B2B8BA85600815958 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,8 +162,9 @@
 		35A6C5E92B8A3B0600815958 /* RouterNavigationTests */ = {
 			isa = PBXGroup;
 			children = (
+				3522DFEF2B939F67000E19C9 /* Helpers */,
+				3522DFEB2B939E54000E19C9 /* __Snapshots__ */,
 				35A6C5EA2B8A3B0600815958 /* SnapshotTests.swift */,
-				35A6C6362B8A8BD600815958 /* SnaphostHelper.swift */,
 			);
 			path = RouterNavigationTests;
 			sourceTree = "<group>";
@@ -152,6 +177,7 @@
 				35A6C60A2B8A407400815958 /* PresentationMode.swift */,
 				35A6C60C2B8A41CD00815958 /* RouterView.swift */,
 				35A6C62D2B8A7B5700815958 /* RouterView+Modal.swift */,
+				359475222B938C0800D1FEB0 /* RouterViewModelState.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -199,6 +225,13 @@
 			path = Dashbaord;
 			sourceTree = "<group>";
 		};
+		35A6C63B2B8BA85600815958 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,9 +263,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				35A6C5E82B8A3B0600815958 /* PBXTargetDependency */,
+				3522DFD92B938FF9000E19C9 /* PBXTargetDependency */,
 			);
 			name = RouterNavigationTests;
+			packageProductDependencies = (
+				3522DFDB2B93919B000E19C9 /* SnapshotTesting */,
+			);
 			productName = RouterNavigationTests;
 			productReference = 35A6C5E62B8A3B0600815958 /* RouterNavigationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -265,6 +301,9 @@
 				Base,
 			);
 			mainGroup = 35A6C5CD2B8A3B0100815958;
+			packageReferences = (
+				3522DFDA2B93919B000E19C9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			productRefGroup = 35A6C5D72B8A3B0100815958 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3522DFEC2B939E54000E19C9 /* __Snapshots__ in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +360,7 @@
 				35A6C5DA2B8A3B0100815958 /* RouterNavigationApp.swift in Sources */,
 				35A6C61B2B8A531100815958 /* ResultViewModel.swift in Sources */,
 				35A6C62C2B8A72B100815958 /* PrivacyPolicyViewModel.swift in Sources */,
+				359475232B938C0800D1FEB0 /* RouterViewModelState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,18 +368,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3522DFF32B939F8A000E19C9 /* SnapshotTesting+Window.swift in Sources */,
+				3522DFF72B939FC5000E19C9 /* XCTestCase+Wait.swift in Sources */,
+				3522DFF52B939FAA000E19C9 /* UIHostingController+Wrap.swift in Sources */,
+				3522DFF12B939F73000E19C9 /* UIApplication+Window.swift in Sources */,
 				35A6C5EB2B8A3B0600815958 /* SnapshotTests.swift in Sources */,
-				35A6C6372B8A8BD600815958 /* SnaphostHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		35A6C5E82B8A3B0600815958 /* PBXTargetDependency */ = {
+		3522DFD92B938FF9000E19C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 35A6C5D52B8A3B0100815958 /* RouterNavigation */;
-			targetProxy = 35A6C5E72B8A3B0600815958 /* PBXContainerItemProxy */;
+			targetProxy = 3522DFD82B938FF9000E19C9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -485,6 +529,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pawelklapuch.RouterNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,6 +562,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pawelklapuch.RouterNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -533,6 +585,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pawelklapuch.RouterNavigationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -553,6 +609,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pawelklapuch.RouterNavigationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,6 +651,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3522DFDA2B93919B000E19C9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3522DFDB2B93919B000E19C9 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3522DFDA2B93919B000E19C9 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35A6C5CE2B8A3B0100815958 /* Project object */;
 }

@@ -2,20 +2,12 @@ import SwiftUI
 
 /// Router is responsible for `Navigation and Presentation` of views
 final class RouterViewModel: ObservableObject {
+    /// Analytics? Testing? etc - optional callback...
+    var onDidShowRoute: ((Route) -> Void)?
 
-    /// State can be updated in two ways:
-    /// - By `ViewModel action`: i.e. viewModel calls `push(route)`
-    /// - By `SwiftUI binding`: ..e user swipes modal away or taps on `back buton`
-    struct State {
-        var navigationPath: [Route] = []
-        var presentingSheet: Route? = nil
-        var presentingFullScreen: Route? = nil
-        var presentingModal: Route? = nil
-    }
+    @Published private(set) var state: RouterViewModelState
 
-    @Published private(set) var state: State
-
-    init(state: RouterViewModel.State = .inital) {
+    init(state: RouterViewModelState = .inital) {
         self.state = state
     }
 
@@ -66,12 +58,22 @@ final class RouterViewModel: ObservableObject {
     func dismissModal() {
         state.presentingModal = nil
     }
-}
 
-// MARK: - Convenience
+    // MARK: - Alert Presentation
 
-extension RouterViewModel.State {
-    static var inital: RouterViewModel.State { RouterViewModel.State(navigationPath: []) }
+    func presentAlert() {
+        state.presentingAlert = true
+    }
+
+    func dismissAlert() {
+        state.presentingAlert = false
+    }
+
+    // MARK: - Navigation Events
+
+    func didShow(route: Route) {
+        onDidShowRoute?(route)
+    }
 }
 
 // MARK: - Bindings
@@ -93,7 +95,11 @@ extension RouterViewModel {
         binding(keyPath: \.presentingModal)
     }
 
-    func binding<T>(keyPath: WritableKeyPath<State, T>) -> Binding<T> {
+    var presentingAlert: Binding<Bool> {
+        binding(keyPath: \.presentingAlert)
+    }
+
+    func binding<T>(keyPath: WritableKeyPath<RouterViewModelState, T>) -> Binding<T> {
         Binding(
             get: { self.state[keyPath: keyPath] },
             set: { self.state[keyPath: keyPath] = $0 }

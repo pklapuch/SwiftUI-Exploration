@@ -3,6 +3,12 @@ import SwiftUI
 final class DefaultViewFactory: ViewFactory {
     private let router: RouterViewModel
 
+    private(set) var welcomeViewModel: WelcomeViewModel?
+    private(set) var expViewModel: ExplanationViewModel?
+    private(set) var resultViewModel: ResultViewModel?
+    private(set) var loginViewModel: LoginViewModel?
+    private(set) var dashboardViewModel: DashboardViewModel?
+
     init(router: RouterViewModel) {
         self.router = router
     }
@@ -32,6 +38,7 @@ final class DefaultViewFactory: ViewFactory {
 
     func makeWelcomeView() -> WelcomeView {
         let viewModel = makeWelcomeViewModel(router)
+        welcomeViewModel = viewModel
         return WelcomeView(viewModel: viewModel)
     }
 
@@ -45,6 +52,7 @@ final class DefaultViewFactory: ViewFactory {
 
     func makeExplanationView() -> ExplanationView {
         let viewModel = makeExplanationViewModel(router)
+        expViewModel = viewModel
         return ExplanationView(viewModel: viewModel)
     }
 
@@ -59,6 +67,7 @@ final class DefaultViewFactory: ViewFactory {
 
     func makeResultView() -> ResultView {
         let viewModel = makeResultViewModel(router)
+        resultViewModel = viewModel
         return ResultView(viewModel: viewModel)
     }
 
@@ -75,6 +84,7 @@ final class DefaultViewFactory: ViewFactory {
 
     func makeLoginView() -> LoginView {
         let viewModel = makeLoginViewModel(router)
+        loginViewModel = viewModel
         return LoginView(viewModel: viewModel)
     }
 
@@ -88,6 +98,7 @@ final class DefaultViewFactory: ViewFactory {
 
     func makeDashboardView() -> DashboardView {
         let viewModel = makeDashboardViewModel(router)
+        dashboardViewModel = viewModel
         return DashboardView(viewModel: viewModel)
     }
 

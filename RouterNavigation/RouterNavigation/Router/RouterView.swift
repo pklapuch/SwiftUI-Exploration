@@ -20,16 +20,21 @@ struct RouterView<Content: View>: View {
             rootContent()
                 .navigationDestination(for: Route.self) { route in
                     contentFactory.make(route: route, mode: .navigation)
+                        .onAppear { viewModel.didShow(route: route) }
                 }
         }
         .sheet(item: viewModel.presentingSheet) { route in
             contentFactory.make(route: route, mode: .sheet)
+                .onAppear { viewModel.didShow(route: route) }
         }
         .fullScreenCover(item: viewModel.presentingFullScreen) { route in
             contentFactory.make(route: route, mode: .fullscreen)
+                .onAppear { viewModel.didShow(route: route) }
         }
         .modal(item: viewModel.presentingModal) { route in
             contentFactory.make(route: route, mode: .modal)
+                .onAppear { viewModel.didShow(route: route) }
         }
+        .alert("Test", isPresented: viewModel.presentingAlert, actions: {})
     }
 }
